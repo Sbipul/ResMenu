@@ -1,0 +1,398 @@
+html,body {
+	scroll-behavior: smooth;
+	font-size: 13px;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	list-style: none;
+}
+li {
+	display: inline-block;
+}
+img {
+	height: 100%;
+	width: 100%;
+	transform: scale(1.1) rotate(1deg);
+}
+
+.nopa {
+	padding: 0;
+	margin: 0;
+}
+.pa {
+	padding: 20px 0px 20px 10px;
+}
+
+
+.landing-page-area {
+	height: 100vh;
+	overflow: hidden;
+}
+
+/*left*/
+.my-col-left {
+	height: 100vh;
+	overflow: hidden;
+}
+.logo-area {
+	height: 70px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.logo-area h2 {
+	font-family: reggae one;
+	font-weight: bold;
+}
+.bar {
+	margin-top: 10px;
+}
+.bar span {
+	height: 4px;
+	width: 18px;
+	display: block;
+	background: #ef7955;
+	margin: 2px auto;
+	transition: 0.5s;
+}
+.bar span.two {
+    width: 28px;
+}
+
+.home-area {
+	padding: 20px;
+	margin-top: 20px;
+}
+.home-area ul li {
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	border-radius: 12px;
+	position: relative;
+}
+.home-area ul ul {
+	position: absolute;
+	background: #d7d7d7;
+	top: 202%;
+	left: 10%;
+	width: 91%;
+	border-radius: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+	z-index: 1;
+}
+.home-area ul li:hover ul {
+	visibility: visible;
+	opacity: 1;
+	top: 112%
+}
+.home-area ul ul::after {
+	position: absolute;
+	border-top: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #d7d7d7;
+	border-left: 10px solid transparent;
+	content: "";
+	top: -16%;
+	left: 17%;
+}
+.home-area ul ul li:hover {
+	background: #ccc;
+	text-decoration: none;
+}
+.home-area ul li a {
+	color: black;
+	padding: 10px 15px;
+	display: block;
+}
+.home-area ul li:hover {
+	background: #fff4f2;
+	text-decoration: none;
+}
+.home-area ul li:hover a {
+	text-decoration: none;
+}
+.contact-area, .footer {
+	text-align: center;
+}
+.contact-area ul li i {
+	color: #ef7955;
+	font-size: 18px;
+}
+.icon {
+	padding-bottom: 40px;
+	text-align: center;
+}
+.icon a {
+	color: black;
+}
+.icon:hover a {
+	text-decoration: none;
+}
+.icon i {
+	font-size: 65px;
+	display: block;
+	transform: scaleX(-1);
+	padding-bottom: 20px;
+}
+.log-out-area {
+	margin-top: 165px;
+}
+.icon {
+	padding-bottom: 25px;
+	text-align: center;
+}
+.icon i {
+	font-size: 33px;
+	display: block;
+	transform: scaleX(-1);
+}
+.footer a {
+	color: black;
+}
+.footer :hover a {
+	text-decoration: none;
+}
+/*right*/
+.sign {
+	position: absolute;
+	top: 2%;
+	right: 3%;
+	background: #0764f7;
+	padding: 3px 5px;
+	border-radius: 5px;
+}
+.sign button i, a {
+	color: white;
+}
+.sign a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.map {
+	height: 23vh;
+	width: 100%;
+}
+.input-area {
+	overflow: hidden;
+}
+
+/*input left*/
+
+.form-col-left {
+	height: 100vh;
+	background: #fbfcfc;
+	padding: 30px;
+}
+.address h2 {
+	position: relative;
+	padding-bottom: 7px;
+}
+.address h2::before {
+	content: "";
+	position: absolute;
+	top: 37px;
+	left: 0;
+	height: 4px;
+	width: 100%;
+	background: black;
+}
+.address h2::after {
+	content: "";
+	position: absolute;
+	top: 37px;
+	left: 0;
+	height: 4px;
+	width: 43%;
+	background: tomato;
+	transition: 0.5s;
+}
+.address h2:hover:after {
+	width: 100%;
+}
+.address ul li {
+	display: flex;
+	padding: 12px 0px;
+	border-bottom: 2px solid #979797;
+	align-items: center;
+	transition: .5s;
+}
+.address ul li:hover {
+	transform: scale(1.2);
+	margin-left: 50px;
+}
+.add li i {
+	font-size: 24px;
+	color: #ef7955;
+	margin-right: 20px;
+}
+.add li a {
+	font-size: 15px;
+	color: #000;
+}
+
+.schedule {
+	display: flex;
+	justify-content: space-between;
+}
+.day p {
+	line-height: 10px;
+}
+.time p {
+	line-height: 10px;
+}
+
+
+
+
+
+/*input right*/
+.form-col-right {
+	padding: 30px;
+	background: #fbfcfc;
+	height: 100vh;
+}
+.form-col-right h2 {
+	padding-bottom: 7px;
+	position: relative;
+}
+.form-col-right h2::before {
+	content: "";
+	position: absolute;
+	top: 37px;
+	left: 0;
+	height: 4px;
+	width: 97%;
+	background: black;
+}
+.form-col-right h2::after {
+	content: "";
+	position: absolute;
+	top: 37px;
+	left: 0;
+	height: 4px;
+	width: 31%;
+	background: tomato;
+	transition: 0.5s;
+}
+.form-col-right h2:hover:after {
+	width: 97%;
+}
+.FirstN {
+	display: inline-block;
+	width: 48%;
+}
+.FirstN input {
+	width: 100%;
+}
+.LastN {
+	width: 48%;
+	float: right;
+}
+.LastN input {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+	height: 91px;
+}
+input {
+	height: 33px;
+}
+label {
+	margin-top: 20px;
+}
+#sname {
+	width: 100%;
+}
+form {
+	padding-right: 20px;
+}
+.bttn {
+	padding: 7px 14px;
+	background: #ff3c00;
+	border-radius: 5px;
+	margin-top: 5px;
+	float: right;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+/*effective css*/
+.bar.off span.one {
+	transform: rotate(225deg);
+	margin-bottom: -3px;
+}
+.bar.off span.two {
+	display: none;
+}
+.bar.off span.three {
+	transform: rotate(-225deg);
+	margin-top: -3px;
+}
+
+
+/*pop up*/
+.popp {
+	position: absolute;
+	height: 107px;
+	background: #fdfdfd;
+	width: 301px;
+	top: 32%;
+	z-index: 3;
+	left: 29%;
+	box-shadow: 3px 3px 10px black;
+	display: none;
+	text-align: center;
+}
+.popp::after {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #ff4800;
+	top: 0%;
+	left: 0%;
+	z-index: 2;
+	content: "";
+	clip-path: circle(20% at 0% 0%);
+}
+.popp::before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #ff4800;
+	top: 0%;
+	left: 0%;
+	z-index: 2;
+	content: "";
+	clip-path: circle(35% at 77% 91%);
+}
+.popp h3 {
+	padding-top: 42px;
+	position: relative;
+	z-index: 2;
+}
+.add {
+	display: block;
+}
+.cross {
+	float: right;
+	padding: 0px 10px;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 4;
+	position: relative;
+}

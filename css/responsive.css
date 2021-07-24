@@ -1,0 +1,112 @@
+@media all and (max-width:990px){
+
+
+
+}
+@media all and (max-width:767px){
+
+
+
+}
+@media all and (max-width: 320px){
+
+@keyframes roll {
+	0% {
+		border-bottom:4px solid tomato;
+	},
+	50% {
+		border-bottom:4px solid red;
+	},
+	100% {
+		border-bottom:4px solid aqua;
+	}
+}
+.logo-area {
+	padding-top: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: tomato;
+}
+.log-out-area {
+	margin-top: 352%;
+}
+.my-col-right {
+	position: absolute;
+	top: -2232px;
+	z-index: -1;
+	left: 25px;
+}
+
+.home-area {
+	position: relative;
+	z-index: 1;
+	background: white;
+}
+.map {
+	height: 11vh;
+	width: 95%;
+}
+.input-area {
+	padding: 0px 11px;
+}
+.form-col-right {
+	position: absolute;
+	top: -1928px;
+	left: 25px;
+	padding: 12px 0px;
+	width: 100%;
+	padding-right: 30px;
+}
+.sign {
+	top: 0%;
+	right: 0%;
+}
+.address h2::after {
+	display: none;
+}
+.address h2::before {
+	display: none;
+}
+.address h2 {
+	border-bottom:4px solid green;
+	animation:roll 1s alternate infinite;
+}
+
+.form-col-right h2:after{
+	display: none;
+}
+.form-col-right h2:before{
+	display: none;
+}
+.form-col-right h2 {
+	border-bottom:4px solid green;
+	animation:roll 1s alternate infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
